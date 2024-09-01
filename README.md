@@ -23,7 +23,7 @@
           Choose a Default Compute Zone: The Compute Zone aids in providing a general idea of where the clusters and resources will be located physically.
           Run the following command in the cloud shell to set your default compute zone:
           ```
-          cloud config set compute/zone us-central1-a 
+          gcloud config set compute/zone us-central1-a 
           ```
           Note: You can change us-central1-a to any zone you want.
 
