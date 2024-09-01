@@ -12,6 +12,7 @@
        6) To launch the cloud shell, click the **Activate Cloud Shell** button, which is located next to the search toolbar in the upper-right corner of the console. Cloud Shell gives you command-line access to Google Cloud computing resources. Cloud Shell includes the Google Cloud CLI and the kubectl command-line tool. The gcloud CLI is the primary command-line interface for Google Cloud, while kubectl is the primary command-line interface for running commands against Kubernetes clusters. 
           You can then **Authorize Cloud Shell** if this is your first time using it
           ![Authorize Cloud Shell image](https://github.com/Aqil01/isec6000-assignment1-saleor/blob/4bc9d6d94d8002986c8bd1c04afdabc239e63f11/asset/2-Authorize%20Cloud%20Shell%20Image.png)
+
           The Cloud Shell session will appear in the bottom of the page.
           This shell is used to execute gcloud and kubectl commands. Set your default project in the Google Cloud CLI by running the following command:
           ```
