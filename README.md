@@ -36,8 +36,7 @@
     ![Cluster created image](https://github.com/Aqil01/isec6000-assignment1-saleor/blob/4bc9d6d94d8002986c8bd1c04afdabc239e63f11/asset/5-cluster%20created%20image.png)
 
 ## Install and configure kubectl to manage your Kubernetes cluster
-1) After creating the GKE cluster, open the Cloud shell and type in the following command to configure kubectl to use the cluster you created:
-   
+1) After creating the GKE cluster, open the Cloud shell and type in the following command to configure kubectl to use the cluster you created:  
           ```
           gcloud container clusters get-credentials isec6000-saleor-cluster --zone us-central1-a 
           ```
