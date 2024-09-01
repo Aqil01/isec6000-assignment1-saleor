@@ -37,6 +37,7 @@
 
 ## Install and configure kubectl to manage your Kubernetes cluster
 1) After creating the GKE cluster, open the Cloud shell and type in the following command to configure kubectl to use the cluster you created:
+   
           ```
           gcloud container clusters get-credentials isec6000-saleor-cluster --zone us-central1-a 
           ```
