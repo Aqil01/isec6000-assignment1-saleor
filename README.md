@@ -52,6 +52,21 @@
 ![Compose file edit image](https://github.com/Aqil01/isec6000-assignment1-saleor/blob/4bc9d6d94d8002986c8bd1c04afdabc239e63f11/asset/7-Compose%20file%20edit%20image.png)
 
 4) Follow the steps in [saleor-platform](https://github.com/saleor/saleor-platform) repository to effectively run a Saleor stack enriched with sample data.
-
+5) To deploy the app to **google kubernetes engine**, first we need to convert our **docker-compose.yml** file to yaml files called **manifest** that describe the state of our application. We can either manually do it or use tools like [kompose](https://kompose.io/). When using tools like **kompose**, verify the generated manifest files and change it if necessary to meet our needs.
+6) After creating the manifest files, put them inside a folder and name it **k8s**. Push this folder to the forked repo.
+7) Next clone the forked repo inside the gke cloud shell. Change into the repo folder and run the following command to apply the manifest:
+          ```
+          kubectl apply -f k8s/
+          ```
+8) Now verify the deployment by checking the pod status first by using:
+          ```
+          kubectl get pods
+          ```
+9) Verify the deployed **services** by running:
+          ```
+          kubectl get services
+          ```
+10) We can use the **external ip** of a service displayed when running the **kubectl get services** command to access that service.
+    
 ## Vulnerability Scanning
 Use tools like trivy to scan the container images for vulnerability. You can install trivy by following the instructions on the following webpage: [Install trivy](https://aquasecurity.github.io/trivy/v0.27.1/getting-started/installation/)
